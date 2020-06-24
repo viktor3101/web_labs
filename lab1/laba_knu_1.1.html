@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>laba</title>
+	<script>
+   document.createElement('aside');
+   document.createElement('article');
+  </script>
+  <style>
+   aside {
+    background: #f0f0f0;
+    padding: 10px;
+    width: 200px;
+    float: right;
+   }
+   article {
+    margin-right: 240px;
+    display: block;
+   }
+  </style>
+
+  <script> 
+   window.onload = function() {
+    var drawingCanvas = document.getElementById('smile');
+    if(drawingCanvas && drawingCanvas.getContext) {
+     var context = drawingCanvas.getContext('2d');
+     // Рисуем окружность 
+     context.strokeStyle = "#000";
+     context.fillStyle = "#fc0";
+     context.beginPath();
+     context.arc(100,100,50,0,Math.PI*2,true);
+     context.closePath();
+     context.stroke();
+     context.fill();
+    }
+   }
+  </script>
+
+
+  <style>
+   mark {
+    background: #ffec82;
+    padding: 0 3px;
+    border: 1px dashed #333;
+   }
+  </style>
+
+
+
+</head>
+<body contextmenu="new-context-menu">
+	<header>
+		<h1>Лаба</h1>
+	</header>
+	<article>
+		Я делал эту лабу достаточно долго, но я усвоил очень много важных вещей
+	</article>
+	<hr/>
+
+
+	<header><h1>Тег2</h1></header>
+	<aside>
+		<p>NAN1</p>
+		<p>NAN2</p>
+		<p>NAN3</p>
+		<p>NAN4</p>
+	</aside>
+	<hr /><br /><br /><br /><br /><br />
+
+
+	<audio controls>
+   		<source src="C:\Users\Admin\Desktop\1.mp3" type="">
+    	<source src="" type=""> 
+  </audio>
+  <hr />
+
+
+   <p dir="rtl"><bdi>asdasd	</bdi> — суббота</p>
+   <hr />
+
+
+    <canvas id="smile" width="200" height="200"></canvas>
+    <hr />
+
+
+    <p>Слово, которое начинается на букву Р</p>
+  	<p><input list="character">
+    	<datalist id="character">
+    	<option value="Рот"></option>
+    	<option value="Ром"></option>
+    	<option value="Рак"></option>
+    </datalist></p>
+    <hr />
+
+
+    <button id="openDialog">Открыть окно</button>
+    <dialog>
+    	<p>Нууу.... не придумал ничего нормального</p>
+   		<p><button id="closeDialog">Закрыть окно</button></p>
+    </dialog>
+    <script>
+   var dialog = document.querySelector('dialog');
+   document.querySelector('#openDialog').onclick = function() {
+    dialog.show(); // Показываем диалоговое окно
+   }
+   document.querySelector('#closeDialog').onclick = function() {
+    dialog.close(); // Прячем диалоговое окно
+   }
+  </script>
+  <hr />
+
+
+  <embed src="https://2krota.ru/wp-content/uploads/2019/02/0_i-1.jpg" height="300px" width="500px"></embed>
+  <hr />
+	
+
+
+	<article>
+    	<figure>
+    		<p><img src="https://bipbap.ru/wp-content/uploads/2017/10/0_8eb56_842bba74_XL-640x400.jpg" alt=""></p>
+    		<figcaption>Купеческий клуб</figcaption>
+   		</figure>
+   	</article>
+   	<hr />
+
+
+	<footer>cros</footer>   
+	<hr />
+
+
+	<h1>Заголовок</h1>
+  	<main>
+    Вжная инфа, уникальная, которой нет в других блоках 
+  	</main>
+  	<hr />
+
+
+  	<p>asdasdasd<mark>шестью пальцами</mark>asdasdasd</p>
+  	<hr />
+
+
+  	<menu id="new-context-menu" type="context">
+    	<menuitem>Hello World</menuitem>
+	</menu>
+	<hr />
+
+
+	<p>Усталость</p>
+  <meter value="30" max="100" low="10" high="60">Низкая</meter>
+  <meter value="80" max="100" low="10" high="60">Высокая</meter>
+  <hr />
+
+
+  <nav><a href="6.html">Дирекция</a> | <a href="7.html">Ректорат</a> </nav>
+  <hr />
+
+
+  <form oninput="result.value=(cm.value/2.54).toFixed(2)">
+    <p>Введите длину в сантиметрах: 
+    <input type="number" name="cm" autofocus></p>
+    <p>Длина в дюймах: <output name="result">0</output></p>
+  </form>
+  <hr />
+
+
+  	<picture>
+ 	<source srcset="https://2krota.ru/wp-content/uploads/2019/02/0_i-1.jpg" media="(min-width: 800px)">
+ 	<img src="https://2krota.ru/wp-content/uploads/2019/02/0_i-1.jpg" alt="MDN">
+	</picture>
+	<hr />
+
+
+	<progress max="100" value="98">
+    Загружено на <span id="value">25</span>%
+  	</progress>
+  	<hr />
+
+
+  	<section>
+    	<h1>Gfhfgfc</h1>
+    	<p>ljdhgldhf lsdhg; ;lsdgh ;dghl.</p>
+    </section>
+   	<section>
+    	<h1>adfadfadf</h1>
+    	<p>Иfgh;klfghd ;kfdghjkfghd kjfghk kjff</p>
+  	</section>
+  	<hr />
+
+
+  	<video width="400" height="300" controls="controls">
+  		<source src="C:\Users\Admin\Desktop\32.mp4" type='video/ogg; codecs="theora, vorbis"'>
+  	</video>
+  	<hr />
+
+
+ 	<details>
+    <summary>Создатель</summary>
+    <p>Батька</p>
+    </details>
+    <hr />
+
+
+    <table>
+      <thead>
+        <tr>
+          <th>Твёрдость по Моосу</th>
+          <th>Эталонный минерал</th>
+          <th>Обрабатываемость</th>
+        </tr>
+      </thead>
+      <tbody>
+        <template id="row">
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td></tr
+        ></template>
+      </tbody>
+    </table>
+    <script>
+      var data = [
+        { hardness: 1, mineral: 'Тальк', workability: 'Царапается ногтём' },
+        { hardness: 2, mineral: 'Гипс', workability: 'Царапается ногтём' },
+        { hardness: 3, mineral: 'Кальцит', workability: 'Царапается медью' },
+        {
+          hardness: 4,
+          mineral: 'Флюорит',
+          workability: 'Легко царапается ножом, оконным стеклом'
+        },
+        {
+          hardness: 5,
+          mineral: 'Апатит',
+          workability: 'С усилием царапается ножом, оконным стеклом'
+        },
+        {
+          hardness: 6,
+          mineral: 'Ортоклаз',
+          workability: 'Царапает стекло. Обрабатывается напильником'
+        },
+        {
+          hardness: 7,
+          mineral: 'Кварц',
+          workability: 'Поддаётся обработке алмазом, царапает стекло'
+        },
+        {
+          hardness: 8,
+          mineral: 'Топаз',
+          workability: 'Поддаётся обработке алмазом, царапает стекло'
+        },
+        {
+          hardness: 9,
+          mineral: 'Корунд',
+          workability: 'Поддаётся обработке алмазом, царапает стекло'
+        },
+        { hardness: 10, mineral: 'Алмаз', workability: 'Царапает стекло' }
+      ]
+      var template = document.querySelector('#row')
+      for (var i = 0; i < data.length; i++) {
+        var mohs = data[i]
+        var clone = template.content.cloneNode(true)
+        var cells = clone.querySelectorAll('td')
+        cells[0].textContent = mohs.hardness
+        cells[1].textContent = mohs.mineral
+        cells[2].textContent = mohs.workability
+        template.parentNode.appendChild(clone)
+      }
+    </script>
+    <hr />
+
+
+    <p><time>1957-10-04</time> запущен первый искусственный спутник Земли.</p>	
+    <hr />
+
+
+    <video width="500" height="400" controls>
+    <source src="C:\Users\Admin\Desktop\32.mp4" type='video/ogg; codecs="theora, vorbis"' />
+    <track kind="subtitles" src="" srclang="en" label="English" />
+    </video>
+    <hr />
+
+
+    <p>Самое длинное слово из химии</p>
+    <p class="word"><h1>метоксихлор<wbr>диэтиламино<wbr>диэтиламино<wbr>диэтиламино<wbr>метил<wbr>бутил<wbr>амино<wbr>акридин</h1></p>
+    	<hr />
+</body>
+</html>

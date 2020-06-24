@@ -1,0 +1,16 @@
+body{
+    margin: 0;
+}
+.paskal{
+    width: 100%;
+    height: 10vh;
+    background: rgb(194, 185, 185);
+    text-align: center;
+    font-size: 3vw;
+    padding-top: 0.4vw;
+}
+#triangle{
+    width: 100%;
+    height: 89vh;
+    background: rgb(225, 250, 247);
+}
